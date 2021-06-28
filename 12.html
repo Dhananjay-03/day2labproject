@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="12.css">
+    <title></title>
+
+  </head>
+  <body>
+    <input id="in1" placeholder="Enter age" type="text" name="" value="">
+    <button  id="bn21"type="button" onclick="validate()" name="button">click here</button>
+    <script>
+       function validate(){
+           var age=document.getElementById('in1').value;
+           var ans="your age is invalid ";
+           if(age>=0 && age<100){
+               ans=" yoyr age is valid ";
+           }
+           alert(ans);
+       }
+   </script>
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+  </head>
+  <body>
+    <p><label id="n1">Enter First number</label></p>
+    <input id="num1" type="number" required />
+    <p><label id="n2">Enter Second number</label></p>
+    <input id="num2" type="number" required /><br /><br />
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p><label id="n3">Maximum of two number</label></p>
+    <input id="num3" type="number" />
+    <script>
+      function myFunction() {
+        var num = [];
+        num.push(document.getElementById("num1").value);
+        num.push(document.getElementById("num2").value);
+        res = document.getElementById("num3");
+
+        var maxN = num[0] > num[1] ? num[0] : num[1];
+        res.value = maxN;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+body{
+  align-items: center;
+}
+#bn1{
+  width: 150px;
+  height: 20px;
+  background-color: red;
+}
+#bn2{
+  width: 150px;
+  height: 20px;
+  background-color: green;
+}
+
+#bn3{
+  width: 150px;
+  height: 20px;
+  background-color: blue;
+}

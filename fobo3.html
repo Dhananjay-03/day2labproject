@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+
+  // Javascript implementation to split string into
+  // substrings on the basis of delimiter
+
+  // function to split string into substrings on the
+  // basis of delimiter and return the substrings
+  // after split
+  function splitStrings(str, dl)
+  {
+  	var word = "";
+
+  	// to count the number of split strings
+  	var num = 0;
+
+  	// adding delimiter character at the end
+  	// of 'str'
+  	str = str + dl;
+
+  	// length of 'str'
+  	var l = str.length;
+
+  	// traversing 'str' from left to right
+  	var substr_list = [];
+  	for (var i = 0; i < l; i++) {
+
+  		// if str[i] is not equal to the delimiter
+  		// character then accumulate it to 'word'
+  		if (str[i] != dl)
+  			word = word + str[i];
+
+  		else {
+
+  			// if 'word' is not an empty string,
+  			// then add this 'word' to the array
+  			// 'substr_list[]'
+  			if (word.length != 0)
+  				substr_list.push(word);
+
+  			// reset 'word'
+  			word = "";
+  		}
+  	}
+
+  	// return the splitted strings
+  	return substr_list;
+  }
+
+  // Driver program to test above
+  var str = "557 Farmer Rd Corner, MT 59105";
+  var dl = ' ';
+  var res = splitStrings(str, dl);
+  var ar=[];
+  res.forEach(x => {
+     
+  	document.write( x +" ");
+
+  });
+
+  </script>
+
+  </body>
+</html>
